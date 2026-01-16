@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dow5eu8aq2ixk"]
+[gd_scene load_steps=3 format=3 uid="uid://dow5eu8aq2ixk"]
 
 [ext_resource type="PackedScene" uid="uid://ciuux7xh414rk" path="res://player.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://bexiwd3fyjmfj" path="res://tree.tscn" id="2_e2o6t"]
 
 [node name="Game" type="Node2D"]
 
@@ -10,3 +11,33 @@ offset_bottom = 1090.0
 
 [node name="Player" parent="." instance=ExtResource("1_80nbo")]
 position = Vector2(930, 524)
+
+[node name="Tree" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(364, 852)
+
+[node name="Tree2" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(515, 578)
+
+[node name="Tree3" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(683, 203)
+
+[node name="Tree4" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(1251, 722)
+
+[node name="Tree5" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(1194, 114)
+
+[node name="Tree6" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(1474, 479)
+
+[node name="Tree7" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(1754, 138)
+
+[node name="Tree8" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(1616, 873)
+
+[node name="Tree9" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(847, 838)
+
+[node name="Tree10" parent="." instance=ExtResource("2_e2o6t")]
+position = Vector2(293, 285)
