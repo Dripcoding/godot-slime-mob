@@ -18,7 +18,6 @@ func _physics_process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	queue_free() # free bullet instance after current frame ends
-	print("body entered bullet 2d area")
 	
 	if body.has_method("take_damage"):
 		body.take_damage()
