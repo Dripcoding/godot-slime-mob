@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		$HappyBoo.play_idle_animation()
 
-	var mobs_in_range = %HurtBox.get_overlapping_bodies()
+	var mobs_in_range = $HurtBox.get_overlapping_bodies()
 	var mob_count = mobs_in_range.size()
 	if mob_count > 0:
 		health -= damage_rate * mob_count * delta
