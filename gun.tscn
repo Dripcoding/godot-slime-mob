@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://qm7cxuf4u37s"]
+[gd_scene load_steps=4 format=3 uid="uid://qm7cxuf4u37s"]
 
 [ext_resource type="Script" uid="uid://yug5hm7n34uf" path="res://gun.gd" id="1_dk5gl"]
 [ext_resource type="Texture2D" uid="uid://cswb5do8rrj7q" path="res://pistol/pistol.png" id="1_vk1bi"]
-[ext_resource type="PackedScene" uid="uid://yq8ddrkqvji7" path="res://bullet.tscn" id="3_kw0bs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dk5gl"]
 radius = 432.00116
@@ -28,8 +27,5 @@ position = Vector2(27, -11)
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.3
 autostart = true
-
-[node name="Bullet" parent="." instance=ExtResource("3_kw0bs")]
-position = Vector2(169, -9)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

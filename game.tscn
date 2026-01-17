@@ -16,9 +16,22 @@ offset_bottom = 1090.0
 
 [node name="Player" parent="." instance=ExtResource("1_80nbo")]
 position = Vector2(954, 564)
+collision_mask = 3
 
 [node name="Mob" parent="." instance=ExtResource("1_feb5d")]
 position = Vector2(1547, 202)
+
+[node name="Mob2" parent="." instance=ExtResource("1_feb5d")]
+position = Vector2(426, 163)
+
+[node name="Mob3" parent="." instance=ExtResource("1_feb5d")]
+position = Vector2(1317, 966)
+
+[node name="Mob4" parent="." instance=ExtResource("1_feb5d")]
+position = Vector2(1789, 560)
+
+[node name="Mob5" parent="." instance=ExtResource("1_feb5d")]
+position = Vector2(209, 643)
 
 [node name="Tree" parent="." instance=ExtResource("2_e2o6t")]
 position = Vector2(364, 852)

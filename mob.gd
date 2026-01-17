@@ -23,7 +23,6 @@ func _physics_process(_delta: float) -> void:
 
 func take_damage() -> void:
 	health -= 1
-	print(health)
 	$Slime.play_hurt()
 	
 	if health == 0:
