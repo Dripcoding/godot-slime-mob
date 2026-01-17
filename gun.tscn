@@ -6,9 +6,16 @@
 radius = 316.62122
 
 [node name="Gun" type="Area2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_vk1bi")
+position = Vector2(-1, -2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_dk5gl")
+
+[node name="PivotPoint" type="Marker2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="PivotPoint"]
+position = Vector2(98, 0)
+texture = ExtResource("1_vk1bi")
+
+[node name="BulletSpawn" type="Marker2D" parent="PivotPoint/Sprite2D"]
+position = Vector2(27, -11)
