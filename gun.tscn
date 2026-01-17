@@ -26,6 +26,7 @@ unique_name_in_owner = true
 position = Vector2(27, -11)
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
 autostart = true
 
 [node name="Bullet" parent="." instance=ExtResource("3_kw0bs")]
