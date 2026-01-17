@@ -4,13 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://bexiwd3fyjmfj" path="res://tree.tscn" id="2_e2o6t"]
 
 [node name="Game" type="Node2D"]
+y_sort_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1930.0
 offset_bottom = 1090.0
 
 [node name="Player" parent="." instance=ExtResource("1_80nbo")]
-position = Vector2(930, 524)
+position = Vector2(954, 564)
 
 [node name="Tree" parent="." instance=ExtResource("2_e2o6t")]
 position = Vector2(364, 852)
