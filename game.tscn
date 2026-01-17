@@ -18,7 +18,7 @@ offset_bottom = 1090.0
 position = Vector2(954, 564)
 
 [node name="Mob" parent="." instance=ExtResource("1_feb5d")]
-position = Vector2(954, 564)
+position = Vector2(1547, 202)
 
 [node name="Tree" parent="." instance=ExtResource("2_e2o6t")]
 position = Vector2(364, 852)
