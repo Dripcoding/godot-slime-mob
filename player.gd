@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
 
+signal health_depleted
+
+
 @export var speed: float = 300.0
 @export var health: float = 100.0
 @export var damage_rate: float = 5.0
@@ -26,3 +29,5 @@ func _physics_process(delta: float) -> void:
 	if mob_count > 0:
 		health -= damage_rate * mob_count * delta
 		%HealthBar.value = health
+		if health == 0:
+			health_depleted.emit()
